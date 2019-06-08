@@ -1,0 +1,42 @@
+.ios label {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  transition: all 0.3s ease;
+  box-shadow: inset 0px 0px 0px 1px #e6e6e6;
+  border-radius: 1rem;
+  background-color: #fff;
+  padding: 1px;
+  display: inline-block;
+  width: 46px;
+  height: 26px;
+  position: relative;
+  cursor: pointer;
+  margin: 0px;
+  vertical-align: bottom;
+  outline: none;
+  border: none;
+}
+.ios input {
+  position: absolute;
+  left: -999999px;
+}
+.ios input:checked + label {
+  box-shadow: inset 0px 0px 0px 20px #53d76a;
+}
+.ios label:after {
+  transition: all 0.3s ease-in-out;
+  box-shadow: inset 0 1px 0 #e6e6e6, 0px 2px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 1rem;
+  left: 0;
+  content: "";
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+  background-color: #fff;
+}
+.ios input:checked + label:after {
+  transition: all 0.3s ease-in-out;
+  left: 20px;
+}
